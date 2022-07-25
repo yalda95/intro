@@ -1,8 +1,8 @@
 .hero {
     width: 100%;
     min-width: 375px;
-    padding: 0 3rem;
-    margin-top: 2rem ;
+    max-width: 1440px;
+    margin:2rem auto 0 auto;
 }
 .hero-left {
     width: 50%;
@@ -44,16 +44,19 @@
     margin: 0 auto;
     width: 30rem;
 }
-@media (max-width:900px) {
+@media (max-width:750px) {
     .hero {
         flex-direction:column-reverse;
     }
     .hero-left {
-        width: 100%;
+        width:340px ;
+        margin: 0 auto;
         justify-content:flex-end;
     }
     .hero-left h1 {
         text-align: center;
+        font-size: var(--fs-500);
+        line-height: 2.5rem;
     }
     .hero-left p {
         width: 100%;
@@ -66,7 +69,8 @@
         margin: 1rem auto;
     }
     .hero-right {
-        width: 100%;
+        width:340px ;
+        margin: 0 auto;
     }
-
+    
 }

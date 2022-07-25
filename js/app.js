@@ -9,11 +9,11 @@ const showNavbar = () =>{
 
 function checkMediaQuery() {
     // If the inner width of the window is greater then 768px
-    if (window.innerWidth < 900) {
+    if (window.innerWidth < 750) {
       // Then log this message to the console
       console.log('Media Query Matched!')
       heroImage.src ="./images/image-hero-mobile.png"
-    }else if (window.innerWidth > 900){
+    }else if (window.innerWidth > 750){
         heroImage.src ="./images/image-hero-desktop.png"
 
 
