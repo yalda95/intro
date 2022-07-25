@@ -1,0 +1,76 @@
+/* ------------------*/
+/* Custom Properties */
+/* ----------------- */
+
+:root {
+    --clr-primary-Almost-white: hsl(0, 0%, 98%);
+    --clr-secondary-Medium-Gray:hsl(0, 0%, 41%);
+    --clr-primary-Almost-Black:hsl(0, 0%, 8%);
+    /* font size */
+   
+    --fs-500:2.5rem;
+    --fs-700:5rem;
+
+    /* font families */
+
+    --ff-san-serif:'Epilogue', sans-serif;
+}
+
+/* Box sizing and presets*/
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    min-height: 100vh;
+    font-family: var(--ff-san-serif);
+}
+nav {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+li {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+button {
+    border: none;
+}
+/* ----------------- */
+/*  Utility classes */
+/* ----------------- */
+
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+
+/* colors */
+
+.bg-white { background-color: var(--clr-primary-Almost-white);}
+.bg-gray { background-color: var(--clr-secondary-Medium-Gray);}
+.text-black {color: var(--clr-primary-Almost-Black);}
+/* Typography */
+
+.fs-500 {font-size: var(--fs-500);}
+.fs-700 {font-size: var(--fs-700);}
+
