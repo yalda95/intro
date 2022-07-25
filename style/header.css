@@ -66,13 +66,13 @@ header {
        padding: 0 1rem; 
     }
     .header-left_nav {
-        width: 10rem;
+        width: 100%;
         display: none;
         background: rgb(236, 236, 236);
         position:absolute;
         right:0;
         top: 0;
-        height: 30rem;
+        height: 20rem;
         margin-right: 0;
     }
     .header-left_nav ul {
@@ -80,9 +80,8 @@ header {
         padding-left: 0 ;
         gap: 2rem;
     }
-    .header-left_nav ul li {
-        text-align: center;
-        margin: 0 auto;
+    .header-left_nav ul * {
+       margin: 0 auto;
      
     }
     .header-right button{
