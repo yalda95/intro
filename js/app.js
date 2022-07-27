@@ -2,6 +2,11 @@ const hamburger = document.querySelector('.hamburger')
 const navbar = document.querySelector('.header-left_nav')
 const heroImage = document.querySelector('#hero-image')
 const closeBtn = document.querySelector('#close')
+const featuresBtn = document.querySelector('#features')
+const featuresContent = document.querySelector('#features-content')
+const compnayBtn = document.querySelector('#company')
+const compnayContent = document.querySelector('#compnay-content')
+
 
 const showNavbar = () =>{
     navbar.style.display = "block"
@@ -12,6 +17,9 @@ const showNavbar = () =>{
 
 const closeNavbar = () => {
     navbar.style.display = "none"
+}
+const showMenu = () => {
+    
 }
 
 function checkMediaQuery() {
@@ -32,5 +40,36 @@ function checkMediaQuery() {
 
 hamburger.addEventListener('click',showNavbar)
 closeBtn.addEventListener('click',closeNavbar)
+featuresBtn.addEventListener('click',() =>{
+ featuresContent.classList.toggle('block')
+})
+compnayBtn.addEventListener('click',() => {
+    compnayContent.classList.toggle('block')
+
+})
 window.addEventListener('resize',checkMediaQuery)
 checkMediaQuery();
+
+// Close the dropdown if the user clicks outside of it
+
+document.addEventListener('click',function(e) {
+    console.log(e)
+    if (!e.target.matches('#features') ) {
+          if (featuresContent.classList.contains('block') ) {
+            featuresContent.classList.remove('block');
+          }
+        }
+    
+    if(!e.target.matches('#company')) {
+        if(compnayContent.classList.contains('block')) {
+            compnayContent.classList.remove('block')
+        }
+    }
+})
+
+
+
+
+
+
+

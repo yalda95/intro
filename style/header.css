@@ -23,11 +23,40 @@ header {
 .header-left_nav ul li {
     width: 4rem;
     color:var(--clr-secondary-Medium-Gray);
-    transition: 0.3s all ease;
+    transition: 0.3s all;
     display: flex;
     align-items:center;
+    position:relative;
 }
 .header-left_nav ul li:hover {
+    color: var(--clr-primary-Almost-Black);
+}
+.dropdown-content {
+    position: absolute;
+    top: 3rem;
+    background: var(--clr-primary-Almost-white);
+    -webkit-box-shadow: 5px 5px 14px 5px rgba(0,0,0,0.3); 
+    box-shadow: 5px 5px 14px 5px rgba(0,0,0,0.3);
+    display: none;
+    z-index: 100;
+}
+.dropdown-content ul {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+.dropdown-content ul li  {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 7rem;
+}
+.dropdown-content ul li a {
+    color: var(--clr-secondary-Medium-Gray);
+    transition: 0.3s all;
+    padding-left: 0.5rem;
+}
+.dropdown-content ul li a:hover {
     color: var(--clr-primary-Almost-Black);
 }
 .header-right {
